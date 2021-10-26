@@ -2,7 +2,10 @@ $(document).ready(function(){
 
 	//메뉴 클릭 했을 때마다 if 쳐주는걸로 해야하나?
 	let ulLength = document.querySelectorAll('ul li').length;
-
+	const del = document.getElementById("delete");
+	let ul = document.querySelector('ul');
+	const item = ul.getElementsByTagName('li');
+	
 	if(ulLength>3){
 		console.log(ulLength);
 		$('#up').show();
@@ -22,6 +25,18 @@ $(document).ready(function(){
 		$('div ul li:first-child').insertAfter(('div ul li:last-child'));
 
 	});
-
-
-});
+	
+	del.addEventListener("click",function(){
+		let ulLength = document.querySelectorAll('ul li').length;
+		item[0].remove();
+		if(ulLength>4){
+			console.log(ulLength);
+			$('#up').show();
+			$('#down').show();
+		}else{
+			console.log(ulLength);
+			$('#up').hide();
+			$('#down').hide();
+		};
+	});
+});	

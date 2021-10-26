@@ -1,8 +1,8 @@
 *{margin: 0;padding: 0; user-select: none;}
+body{padding-top: 300px;}
 li{list-style: none;}
 div{width: 500px; height: 372px; text-align: center; margin: 11px auto; overflow: hidden;}
 button{width: 85px;height: 20px; margin: 0 auto; display: block; cursor: pointer;}
 ul{width: 100%; height: 100%; overflow: hidden;}
 ul li{width: 377px; height: 114px; border: 2px solid #649ae2; border-radius: 10px;
     box-shadow: 3px 3px 15px 0 rgba(0, 0, 0, 0.16); box-sizing: border-box; margin: 0 auto 15px; line-height: 114px; text-align: center; cursor: pointer;}
-#up{margin-top: 300px;}
