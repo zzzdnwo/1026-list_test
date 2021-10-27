@@ -1,6 +1,5 @@
 $(document).ready(function(){
 
-	//메뉴 클릭 했을 때마다 if 쳐주는걸로 해야하나?
 	let ulLength = document.querySelectorAll('ul li').length;
 	const del = document.getElementById("delete");
 	let ul = document.querySelector('ul');
